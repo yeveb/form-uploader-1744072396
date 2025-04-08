@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAT101 - Matematik I Sınav Formu</title>
+  <style>
+    body { font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }
+    input[type=text], input[type=email] { width: 100%; padding: 8px; margin-bottom: 10px; }
+    .question { margin: 20px 0; }
+    .options label { display: block; margin-bottom: 5px; }
+    button { padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h2>Matematik I (MAT101)</h2>
+<p>Lütfen aşağıdaki soruları dikkatlice cevaplayınız. Tüm alanları doldurun.</p>
+<form action="/submit" method="POST">
+<input type="hidden" name="course_id" value="1">
+<label>Ad Soyad:</label>
+<input type="text" name="name" required>
+
+<label>E-posta:</label>
+<input type="email" name="email" required>
+<div class='question'><p><strong>1. Türkiye'nin başkenti neresidir?</strong></p>
+<div class='options'>
+<label>
+  <input type="radio" name="q_1" value="D" required> D) Bursa
+</label>
+<label>
+  <input type="radio" name="q_1" value="A" required> A) Ankara
+</label>
+<label>
+  <input type="radio" name="q_1" value="B" required> B) İstanbul
+</label>
+<label>
+  <input type="radio" name="q_1" value="C" required> C) İzmir
+</label>
+</div>
+</div>
+
+<button type="submit">Gönder</button>
+<p style="font-size:12px; color:gray;">Form oluşturulma tarihi: 08.04.2025 01:23</p>
+</form>
+</body>
+</html>
